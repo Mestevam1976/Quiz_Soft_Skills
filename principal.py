@@ -13,7 +13,7 @@ def clear(): # limpa a tela removendo do prompt as informações anteriores ao c
         _ = system('clear')
 
 def grafico():
-  rotulos_Categorias = [['Importante {:.1%}'.format(importante/total)], ['Urgente {:.1%}'.format(urgente/total)], ['Circunstancial {:.1%}'.format(circunstancial/total)]]
+  rotulos_Categorias = [['Importante {:.2%}'.format(importante/total)], ['Urgente {:.2%}'.format(urgente/total)], ['Circunstancial {:.2%}'.format(circunstancial/total)]]
 
   list_data = [importante, urgente, circunstancial]
 
@@ -43,11 +43,11 @@ urgente = sum(funcoes.b)
 circunstancial = sum(funcoes.c)
 
 formatacao.forma_linha()
-print(' O PERCENTUAL DE PONTOS COMO IMPORTANTE É DE: {:.1%}'.format(importante/total))
+print(mensagens.respostas[0] + ' {:.2%}'.format(importante/total))
 print('\n')
-print(' O PERCENTUAL DE PONTOS COMO URGENTE É DE: {:.1%}'.format(urgente/total))
+print(mensagens.respostas[1] + ' {:.2%}'.format(urgente/total))
 print('\n')
-print(' O PERCENTUAL DE PONTOS COMO CIRCUNSTANCIAL É DE: {:.1%}'.format(circunstancial/total))
+print(mensagens.respostas[2] + ' {:.2%}'.format(circunstancial/total))
 formatacao.forma_linha()
 grafico()
 

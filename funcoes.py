@@ -16,7 +16,6 @@ def clear(): # limpa a tela removendo do prompt as informações anteriores ao c
 def questao_01():
   proxima_pergunta = False
   while proxima_pergunta == False:
-    formatacao.forma_linha()
     print(mensagens.perguntas[0].upper())
     mensagens.opcoes()
     escolha_Q1 = int(input('Escolha uma das opções acima (1, 2, 3, 4 ou 5): '))
@@ -28,8 +27,10 @@ def questao_01():
       return escolha_Q1
 
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
 
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5 or continua == ' ':
         proxima_pergunta = False
@@ -49,8 +50,10 @@ def questao_02():
       questao_03()
       return escolha_Q2
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -69,8 +72,10 @@ def questao_03():
       questao_04()
       return escolha_Q3
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -89,8 +94,10 @@ def questao_04():
       questao_05()
       return escolha_Q4
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -109,8 +116,10 @@ def questao_05():
       questao_06()
       return escolha_Q5
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -129,8 +138,10 @@ def questao_06():
       questao_07()
       return escolha_Q06
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -149,8 +160,10 @@ def questao_07():
       questao_08()
       return escolha_Q7
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -169,8 +182,10 @@ def questao_08():
       questao_09()
       return escolha_Q8
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -189,8 +204,10 @@ def questao_09():
       questao_10()
       return escolha_Q9
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -209,8 +226,10 @@ def questao_10():
       questao_11()
       return escolha_Q10
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -229,8 +248,10 @@ def questao_11():
       questao_12()
       return escolha_Q11
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -249,8 +270,10 @@ def questao_12():
       questao_13()
       return escolha_Q12
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -269,8 +292,10 @@ def questao_13():
       questao_14()
       return escolha_Q13
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -289,8 +314,10 @@ def questao_14():
       questao_15()
       return escolha_Q14
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()
@@ -307,11 +334,13 @@ def questao_15():
       proxima_pergunta = True
       formatacao.forma_linha()
       c.append(escolha_Q15)
-      print('---------- SEGUE O RESULTADO DO QUIZ: ---------')
+      print(' SEGUE O RESULTADO DO QUIZ: '.center(80))
       return escolha_Q15
     else:
-      print('Digite somente 1, 2, 3, 4 ou 5! ')
-      continua = input('Digite qualquer coisa para continuar: ')
+      texto_alerta = 'Digite somente 1, 2, 3, 4 ou 5! '
+      texto_continua = 'Digite qualquer coisa para continuar:'
+      print(formatacao.escolher_cor('yellow', texto_alerta))
+      continua = input(formatacao.escolher_cor('green', texto_continua))
       if continua != 1 or continua != 2 or continua != 3 or continua != 4 or continua != 5:
         proxima_pergunta = False
         clear()

@@ -1,3 +1,6 @@
+from formatacao import escolher_cor
+
+
 def opcoes():
     print('\n')
     print('   (1) Nunca')
@@ -7,8 +10,8 @@ def opcoes():
     print('   (5) Sempre')
     print('\n')
 
-
-frase_01 = '\033[91m' + 'BEM-VINDO AO QUIZ DO TEMPO - SOFT SKILLS ' + '\033[0m'
+texto_boas_vindas = 'BEM-VINDO AO QUIZ DO TEMPO - SOFT SKILLS '
+frase_01 = escolher_cor('red', texto_boas_vindas)
 
 perguntas = [
 '[Q01] Costumo fazer minhas tarefas no último minuto ou pedir prorrogação de prazo? ',
@@ -27,3 +30,9 @@ perguntas = [
 '[Q14] Leio muitos e-mails e mensagens desnecessárias, com piadas, correntes, propagandas, apresentações, produtos, etc.?',
 '[Q15] Não consigo ser produtivo, sem tomar um café e conversar com pessoas durante o dia de trabalho?'
    ]
+
+respostas = [
+    'O PERCENTUAL DE PONTOS COMO IMPORTANTE É DE:',
+    ' O PERCENTUAL DE PONTOS COMO URGENTE É DE:',
+    ' O PERCENTUAL DE PONTOS COMO CIRCUNSTANCIAL É DE:'
+]
